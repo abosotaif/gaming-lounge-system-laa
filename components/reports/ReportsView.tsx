@@ -217,19 +217,19 @@ const ReportsView: React.FC = () => {
               <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
                 {filteredReports.map(report => (
                   <tr key={report.id}>
-                    <td className="px-6 py-4 whitespace-nowrap">{report.deviceId}</td>
-                    <td className="px-6 py-4 whitespace-nowrap">{new Date(report.startTime).toLocaleTimeString('ar-EG')}</td>
-                    <td className="px-6 py-4 whitespace-nowrap">{new Date(report.endTime).toLocaleTimeString('ar-EG')}</td>
-                    <td className="px-6 py-4 whitespace-nowrap">{report.durationMinutes} دقيقة</td>
-                    <td className="px-6 py-4 whitespace-nowrap">{t(report.gameType)}</td>
-                    <td className="px-6 py-4 whitespace-nowrap">{report.cost.toFixed(2)}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-gray-900 dark:text-gray-100">{report.deviceId}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-gray-900 dark:text-gray-100">{new Date(report.startTime).toLocaleTimeString('ar-EG')}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-gray-900 dark:text-gray-100">{new Date(report.endTime).toLocaleTimeString('ar-EG')}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-gray-900 dark:text-gray-100">{report.durationMinutes} دقيقة</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-gray-900 dark:text-gray-100">{t(report.gameType)}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-gray-900 dark:text-gray-100">{report.cost.toFixed(2)}</td>
                   </tr>
                 ))}
               </tbody>
               <tfoot>
                 <tr>
-                  <td colSpan={5} className="px-6 py-4 text-right font-bold text-lg">{t('total')}</td>
-                  <td className="px-6 py-4 font-bold text-lg">{totalRevenue.toFixed(2)}</td>
+                  <td colSpan={5} className="px-6 py-4 text-right font-bold text-lg text-gray-900 dark:text-gray-100">{t('total')}</td>
+                  <td className="px-6 py-4 font-bold text-lg text-gray-900 dark:text-gray-100">{totalRevenue.toFixed(2)}</td>
                 </tr>
               </tfoot>
             </table>

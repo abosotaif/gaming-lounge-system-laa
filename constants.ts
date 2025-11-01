@@ -4,8 +4,8 @@ import { Device, DeviceStatus, Credentials, DeviceType } from './types';
 export const INITIAL_DEVICES: Device[] = [
   { id: 1, name: 'PS-1', status: DeviceStatus.Available, type: DeviceType.PS4 },
   { id: 2, name: 'PS-2', status: DeviceStatus.Available, type: DeviceType.PS4 },
-  { id: 3, name: 'PS-3', status: DeviceStatus.Busy, type: DeviceType.PS5 },
-  { id: 4, name: 'PS-4', status: DeviceStatus.Maintenance, type: DeviceType.PS4 },
+  { id: 3, name: 'PS-3', status: DeviceStatus.Available, type: DeviceType.PS5 },
+  { id: 4, name: 'PS-4', status: DeviceStatus.Available, type: DeviceType.PS4 },
   { id: 5, name: 'PS-5', status: DeviceStatus.Available, type: DeviceType.PS5 },
 ];
 

@@ -16,8 +16,9 @@ export default defineConfig(({ mode }) => {
       },
       resolve: {
         alias: {
-          // FIX: In an ES module, __dirname is not available. Use process.cwd() to get the project root.
-          '@': path.resolve(process.cwd(), '.'),
+          // FIX: `__dirname` is not available in ES modules. Using `path.resolve('.')` instead to resolve
+          // to the current working directory, which is typically the project root. This fixes the error.
+          '@': path.resolve('.'),
         }
       }
     };

@@ -44,9 +44,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
   const [theme, setTheme] = useState<'light' | 'dark' | 'blue_orange'>('dark');
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
   const [devices, setDevices] = useState<Device[]>(INITIAL_DEVICES);
-  const [sessions, setSessions] = useState<{ [key: number]: Session | undefined }>({
-     3: { deviceId: 3, startTime: Date.now() - 30 * 60 * 1000, gameType: GameType.Double, timeMode: TimeMode.Open, status: 'active', playerName: 'أحمد' }
-  });
+  const [sessions, setSessions] = useState<{ [key: number]: Session | undefined }>({});
   const [reports, setReports] = useState<Report[]>([]);
   const [prices, setPrices] = useState<Prices>(INITIAL_PRICES);
   const [page, setPage] = useState<Page>(Page.DASHBOARD);

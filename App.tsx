@@ -111,9 +111,9 @@ const SessionEndSummaryModal: React.FC<SessionEndSummaryModalProps> = ({ report,
     <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-[100]">
       <div className="bg-white dark:bg-gray-800 rounded-lg p-6 w-full max-w-sm m-4 text-center shadow-2xl transition-opacity duration-300 opacity-100">
         <h2 className="text-2xl font-bold mb-2 text-indigo-600 dark:text-indigo-400">{t('session_ended_summary_title')}</h2>
-        <p className="text-lg font-semibold mb-4">{t('device')} {deviceName}</p>
+        <p className="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-100">{t('device')} {deviceName}</p>
         
-        <div className="text-right dark:text-gray-200 space-y-2 my-4 border-t border-b dark:border-gray-700 py-4">
+        <div className="text-right text-gray-800 dark:text-gray-200 space-y-2 my-4 border-t border-b dark:border-gray-700 py-4">
             <div className="flex justify-between"><span>{t('duration')}:</span> <strong>{report.durationMinutes} {t('minute_short')}</strong></div>
             <div className="flex justify-between"><span>{t('game_type')}:</span> <strong>{t(report.gameType)}</strong></div>
         </div>
